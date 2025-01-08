@@ -53,7 +53,7 @@ const Create = () => {
       >
         Retour
       </p>
-      <div className="m-8 h-screen p-8">
+      <div className="m-8 h-screen p-8 overflow-y-scroll pb-64">
         <p className="text-2xl text-white mb-5 text-center bg-[#ffffff33] py-4">
           Création de votre bar
         </p>

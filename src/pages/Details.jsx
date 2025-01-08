@@ -14,7 +14,15 @@ const Details = () => {
   return (
     <div className="pt-[80px] accueilBg fixed top-0 left-0 w-full h-screen">
       <div className="m-8 h-screen p-8 overflow-y-scroll pb-64">
-        <p className="text-2xl text-white mb-5">Bar le {currentBar.name}</p>
+        <div className="flex flex-row items-center justify-between">
+          <p className="text-2xl text-white mb-5">Bar le {currentBar.name}</p>
+          <p
+            className="text-xl text-white mb-5 underline underline-offset-2 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            Retour
+          </p>
+        </div>
         <Bars.Card
           name={currentBar.name}
           adressse={currentBar.adresse}
